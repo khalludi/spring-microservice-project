@@ -1,0 +1,7 @@
+For mac
+
+Use this image: https://www.mongodb.com/docs/v7.0/tutorial/install-mongodb-community-with-docker/
+
+Docker cmd: `$ docker run --name mongo -p 27017:27017 -d mongodb/mongodb-community-server:latest`
+
+Mongosh resources: `https://www.mongodb.com/docs/mongodb-shell/crud/read/`
