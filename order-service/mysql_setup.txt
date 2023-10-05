@@ -1,0 +1,9 @@
+docker run --name sbt-sql -p 127.0.0.1:6306:3306 -e MYSQL_ROOT_PASSWORD=mypassword -d mysql
+
+mysql --host=127.0.0.1 -P6306 -uroot -pmypassword
+
+If you want to create separate user aside from root:
+
+CREATE DATABASE myDB;
+CREATE USER ‘myUser’@’%’ IDENTIFIED BY ‘myPassword’;
+GRANT ALL PRIVILEGES ON myDB.* TO 'myUser'@'%';
